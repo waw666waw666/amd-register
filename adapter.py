@@ -28,8 +28,16 @@ class AmdAdapter(BaseSiteAdapter):
         return "https://www.amd.com/en/registration/ai-dev-program-sign-up-form.html?custtarg=aHR0cHM6Ly9kZXZlbG9wZXIuYW1kLmNvbT9SZWxheVN0YXRlPQ=="
 
     def prepare_identity(self) -> Dict[str, Any]:
-        """Generate synthetic credentials matching AMD requirements."""
-        use_disposable = self.config.get("use_disposable_mail", True)
+        """Generate synthetic credentials matching AMD requirements, supporting custom mailbox."""
+        custom_email = self.config.get("email")
+        if custom_email:
+            ident = generate_identity(locale="US")
+            ident["email"] = custom_email
+            self.mail_client = None
+            self.account_data = ident
+            return self.account_data
+
+        use_disposable = self.config.get("defaults", {}).get("use_disposable_mail", self.config.get("use_disposable_mail", True))
         if use_disposable:
             self.mail_client = DisposableMailClient()
             ident = generate_identity(locale="US", mail_client=self.mail_client)
