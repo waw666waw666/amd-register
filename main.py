@@ -1,6 +1,6 @@
 """
-AMD AI Developer Program AutoRegister - Standalone Entry Point.
-Powered by AutoRegister Community (https://github.com/waw666waw666/register-community).
+AMD AI Developer Program RegisterHub - Standalone Entry Point.
+Powered by RegisterHub (https://github.com/waw666waw666/register-community).
 """
 import os
 import sys
@@ -49,7 +49,7 @@ def run_single(config: dict, headless_override=None, proxy_override=None) -> boo
     output_dir = Path(config.get("output_dir", "./results"))
 
     print("=" * 65)
-    print("  AMD AI Developer Program AutoRegister - Execution Pipeline")
+    print("  AMD AI Developer Program RegisterHub - Execution Pipeline")
     print("  Channel  :", channel)
     print("  Headless :", headless)
     print("  Proxy    :", proxy_server or "Direct Connection")
