@@ -1,6 +1,6 @@
 """
 AMD AI Developer Program RegisterHub - Standalone Entry Point.
-Powered by RegisterHub (https://github.com/waw666waw666/register-community).
+Powered by RegisterHub (https://github.com/waw666waw666/RegisterHub).
 """
 import os
 import sys
