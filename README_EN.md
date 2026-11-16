@@ -52,12 +52,13 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
-### 2. Configuration (Optional)
+### 2. Configuration & Crucial Guidance
 
 Copy `config.example.json` to `config.json` to configure proxies or headless mode:
 
 ```json
 {
+  "email": null,
   "browser": {
     "headless": false,
     "slow_mo": 50,
@@ -68,6 +69,27 @@ Copy `config.example.json` to `config.json` to configure proxies or headless mod
   "output_dir": "./results"
 }
 ```
+
+### Crucial: Mailbox Configuration & OTP Code Entry
+
+1. **Custom Mailbox Required**:
+   - AMD sends an official email containing a **6-digit verification code** upon form submission;
+   - Configure your real mailbox in `config.json`:
+     ```json
+     {
+       "email": "your_work_email@outlook.com",
+       "browser": {
+         "headless": false
+       }
+     }
+     ```
+2. **Interactive Terminal Code Entry**:
+   - The script clears OneTrust privacy overlays and populates realistic profile information;
+   - After form submission, the terminal prompts:
+     ```text
+     [?] Enter 6-digit verification code from AMD email: 
+     ```
+   - Enter the code to complete official onboarding and save credentials to `results/accounts.txt`.
 
 ### 3. Execution
 
