@@ -1,8 +1,8 @@
 @echo off
 chcp 65001 >nul
-title AMD AI Developer Program RegisterHub
+title AMD AI Developer Program Register
 echo ========================================================
-echo   AMD AI Developer Program RegisterHub
+echo   AMD AI Developer Program Register
 echo   AMD 官方 AI 开发者计划全自动入职与凭据获取工具
 echo ========================================================
 echo.
