@@ -10,31 +10,31 @@
 
 ---
 
-##  Ecosystem & Backlink Notice
+## Ecosystem & Backlink Notice
 
->  **Framework Origin**:  
+> **Framework Origin**:  
 > This standalone tool is derived directly from **[AutoRegister Community](https://github.com/waw666waw666/register-community)**, a general-purpose automated account registration and credential management framework.  
 > 
 > If you need multi-site orchestration, tri-channel disposable mailbox rotators, lifecycle credential verification, or automated adapter code generation scaffolds, check out our primary repository:  
 > 
->  **Main Framework Repository**: **[https://github.com/waw666waw666/register-community](https://github.com/waw666waw666/register-community)**
+> **Main Framework Repository**: **[https://github.com/waw666waw666/register-community](https://github.com/waw666waw666/register-community)**
 
 ---
 
-##  Overview
+## Overview
 
 An enterprise-grade registration tool designed for the official AMD AI Developer Program. Features deep OneTrust modal penetration, Akamai sensor telemetry parity, and automated developer profile provisioning.
 
-###  Key Highlights
+### Key Highlights
 
--  **Official Big Tech Program**: Compliant access to AMD developer resources
-- ️ **Akamai Telemetry Parity**: Humanized typing kinematics and adaptive event dispatch
--  **OneTrust Clearance**: Automated detection and removal of consent modal banners
--  **Developer Profile Synthesis**: Automated generation of realistic developer metadata
+- **Official Big Tech Program**: Compliant access to AMD developer resources
+- **Akamai Telemetry Parity**: Humanized typing kinematics and adaptive event dispatch
+- **OneTrust Clearance**: Automated detection and removal of consent modal banners
+- **Developer Profile Synthesis**: Automated generation of realistic developer metadata
 
 ---
 
-##  Quickstart
+## Quickstart
 
 ### 1. Prerequisites and Installation
 
@@ -91,7 +91,7 @@ email----password----api_key----timestamp
 
 ---
 
-## ️ Ecosystem Portfolio
+## Ecosystem Portfolio
 
 Part of the AutoRegister open-source automation family:
 
@@ -105,6 +105,6 @@ Part of the AutoRegister open-source automation family:
 
 ---
 
-## ️ Legal Disclaimer
+## Legal Disclaimer
 
 This project is intended strictly for authorized educational research, browser automation benchmarking, and legitimate quality assurance. Users must strictly adhere to the target platform's Terms of Service and all applicable regional laws. See [DISCLAIMER.md](DISCLAIMER.md).
