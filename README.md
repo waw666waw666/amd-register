@@ -52,12 +52,13 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
-### 2. 运行配置 (可选)
+### 2. 运行配置与核心实操说明
 
-项目根目录提供开箱即用的 `config.example.json`。如需挂载本地代理或修改超时，直接复制为 `config.json` 即可：
+项目根目录提供开箱即用的 `config.example.json`。可复制为 `config.json` 进行配置：
 
 ```json
 {
+  "email": null,
   "browser": {
     "headless": false,
     "slow_mo": 50,
@@ -68,6 +69,27 @@ playwright install chromium
   "output_dir": "./results"
 }
 ```
+
+### 核心必读：邮箱配置与验证码接收 (Email & OTP Guide)
+
+1. **自备个人/工作邮箱配置**：
+   - AMD 提交开发者入职表单后，会向注册邮箱发送一封包含 **6 位数字验证码** 的官方邮件；
+   - 请在 `config.json` 中填入你的真实邮箱：
+     ```json
+     {
+       "email": "your_work_email@outlook.com",
+       "browser": {
+         "headless": false
+       }
+     }
+     ```
+2. **终端交互式验码**：
+   - 脚本会自动清理 OneTrust 隐私遮罩并填入全套合规开发者资料；
+   - 提交表单后，控制台会停下并提示：
+     ```text
+     [?] 请在上方查收 AMD 官方邮件，并输入 6 位验证码: 
+     ```
+   - 打开邮箱查收验证码，在控制台输入 6 位数字回车，脚本即可完成入职并保存凭据至 `results/accounts.txt`。
 
 ### 3. 一键启动下号
 
